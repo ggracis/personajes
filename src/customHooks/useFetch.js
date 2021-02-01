@@ -19,6 +19,7 @@ export const useFetch = (endpoint, initialState = []) => {
       });
       const data = await result.json();
       console.log("Algo traje");
+      console.log(data);
       setData(data);
       setFetching(false);
     } catch (e) {
